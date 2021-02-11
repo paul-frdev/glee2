@@ -3,4 +3,51 @@
 @import 'reset';
 @import 'global';
 
+
+.header {
+  padding: 45px 0 55px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+  &__list-link {
+    color: #436372;
+    span {
+      color: #436372;
+      width: 9px;
+      height: 9px;
+      padding: 2px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import 'media';
