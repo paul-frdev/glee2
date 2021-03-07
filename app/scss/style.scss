@@ -255,7 +255,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     border-right: 2px solid #e8e4df;
-   
+
     &:last-child {
       border-right: none;
     }
@@ -274,7 +274,7 @@
     content: '';
     top: 22px;
     left: -30px;
-   
+
   }
 
   &__title {
@@ -294,6 +294,230 @@
   }
 
 }
+
+.products {
+  padding: 70px 0 70px;
+  background-color: #fcfcfc;
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 36px;
+    color: #191919;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__filter-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  &__btn {
+    @extend %DMSans-700;
+    color: #8b8b8b;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 35px;
+  }
+
+  &__box {
+    background-color: #fff;
+    max-width: 265px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+
+  &__item {
+    padding-top: 25px;
+
+    &:hover {
+      .products__link-box {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__box-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 222px;
+    overflow: hidden;
+  }
+
+  &__img {
+    vertical-align: middle;
+    margin: 0 auto;
+    background-size: contain;
+    object-fit: cover;
+  }
+
+  &__link-box {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    width: 170px;
+    height: 50px;
+    transform: translateY(300%);
+    transition: all .3s;
+  }
+
+  &__link {
+    transition: all .3s;
+  }
+
+
+  &__link--white-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #a3bbc8;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+  }
+
+  &__link--blue-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #fff;
+
+      path {
+        fill: #a3bbc8;
+      }
+    }
+  }
+
+  &__item-title {
+    @extend %DMSans-500;
+    color: #243f4d;
+    text-align: center;
+  }
+
+  &__item-text {
+    @extend %DMSans-700;
+    color: #a3bbc8;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.products-modern {
+  padding: 100px 0 95px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 865px;
+    background-color: #feefe2;
+    min-height: 380px;
+
+    &+.products-modern__item {
+      margin-left: 15px;
+    }
+  }
+
+  &__item-box {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 255px;
+
+  }
+
+  &__item-img {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    display: inline;
+  }
+
+  &__item-title {
+    @extend %DMSans-700;
+    font-size: 26px;
+    color: #243f4d;
+    margin-bottom: 25px;
+  }
+
+  &__item-text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+
+  &__item-btn {
+    position: relative;
+    @extend %Rubik-500;
+    font-size: 15px;
+    color: #436372;
+    background-color: transparent;
+    border: 1px solid #a7aeae;
+    border-radius: 5px;
+    opacity: border 0.4;
+    padding: 20px 85px 20px 20px;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 27px;
+      right: 22px;
+      width: 22px;
+      height: 9px;
+      background-image: url('../images/products/arrow-dark-left.svg');
+
+      &:hover {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
 
 
 .footer-top {
