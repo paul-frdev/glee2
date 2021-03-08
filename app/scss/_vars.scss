@@ -3,6 +3,13 @@ $title-clr: #243f4d;
 $bg: #fef7f0;
 $links: #7b7b7b;
 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
 %DMSans-400 {
   font-family: 'DMSans-Regular';
   font-weight: 400;

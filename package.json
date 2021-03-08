@@ -9,6 +9,7 @@
   "author": "Paul",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "fancybox": "^3.0.1",
